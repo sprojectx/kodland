@@ -1,0 +1,301 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-ExtraBoldItalic.ttf");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-ExtraLightItalic.ttf");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-SemiBoldItalic.ttf");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-Thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratAlternates";
+  src: url("fonts/MontserratAlternates-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: italic;
+}
+.page {
+  margin: 0;
+  width: 100vw;
+}
+
+header, main section, nav {
+  width: 84vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+header, main, nav, footer, button {
+  font-family: "MontserratAlternates";
+}
+
+button {
+  color: #030203;
+  cursor: pointer;
+  display: inline-flex;
+  border: none;
+  text-decoration: none;
+  transition: all 250ms;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  font-weight: 600;
+  align-items: center;
+}
+button:hover {
+  transform: scale(0.9);
+}
+button:active {
+  transform: scale(1);
+}
+
+.fx {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background: #FC2F20 url("images/background2.png") no-repeat center;
+  background-size: contain;
+  height: 50vw;
+  color: white;
+}
+header h1 {
+  font-size: 10vw;
+  font-weight: 900;
+  margin: 12vw 0 1.65vw -0.5vw;
+}
+header p {
+  font-weight: bold;
+  font-size: 1.65vw;
+  width: 33vw;
+  margin: 1.65vw 0 6vw;
+}
+header button {
+  background-color: #9CFC50;
+  width: 17.5vw;
+  padding: 1.45vw;
+  font-size: 1.45vw;
+  justify-content: center;
+}
+header button:hover {
+  background-color: #FE7F20;
+}
+header button:active {
+  background-color: #9CFC50;
+}
+
+main {
+  background-color: white;
+}
+main #about h1, main #about p {
+  margin: 0;
+  padding: 0.65vw 12vw;
+  text-align: center;
+}
+main #sale {
+  background-color: #9CFC50;
+}
+main .sale {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+main .sale__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.35vw;
+  width: 30%;
+}
+main .sale__product img {
+  width: 10vw;
+}
+main .sale__product button {
+  padding: 1vw 3vw;
+  background-color: #FE7F20;
+}
+main .sale__product button:hover {
+  background-color: #FC2F20;
+}
+main .sale__product button:active {
+  background-color: #FE7F20;
+}
+main #rules {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white url("images/bg-grid2.png") no-repeat center;
+  background-size: contain;
+}
+main #rules img {
+  width: 33%;
+  padding: 1.35vw 0 1.35vw 6vw;
+}
+main section {
+  padding-top: 6.15vw;
+  padding-bottom: 6.15vw;
+}
+main section h1 {
+  font-weight: 900;
+  font-size: 1.75vw;
+}
+main section h2 {
+  font-weight: 600;
+  font-size: 1vw;
+}
+main section p, main section button {
+  font-size: 1.15vw;
+}
+
+footer {
+  background-color: #333;
+}
+footer .menu__elements {
+  width: 100%;
+}
+footer .menu__item a {
+  color: white;
+}
+
+.menu {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.menu__elements {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 2.4vw 0;
+}
+.menu__elements--top {
+  width: 23.5vw;
+}
+.menu__elements--top .menu__item a {
+  font-weight: 600;
+}
+.menu__logo, .menu__item {
+  font-size: 1vw;
+}
+.menu__logo {
+  background-color: transparent;
+}
+.menu__item {
+  list-style: none;
+}
+.menu__item a {
+  text-decoration: none;
+  color: #030203;
+}
+.menu__item:hover {
+  transform: scale(0.9);
+}/*# sourceMappingURL=style.css.map */
